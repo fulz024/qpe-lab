@@ -1,0 +1,156 @@
+{
+  "schema": "qpe.sos-model.v1",
+  "spatial_modes": 2,
+  "angle_bits": 2,
+  "coefficient_bits": 8,
+  "mode_order": "spin-blocked",
+  "orbital_angles": [
+    [
+      1
+    ],
+    [
+      0
+    ],
+    [
+      1
+    ]
+  ],
+  "generators": [
+    {
+      "name": "SF-0-0",
+      "terms": [
+        {
+          "weight": 72,
+          "orbital": -1,
+          "spin": 0,
+          "pauli": "I",
+          "phase": 0
+        },
+        {
+          "weight": 63,
+          "orbital": 0,
+          "spin": 0,
+          "pauli": "Z",
+          "phase": 2
+        },
+        {
+          "weight": 63,
+          "orbital": 0,
+          "spin": 1,
+          "pauli": "Z",
+          "phase": 2
+        }
+      ]
+    },
+    {
+      "name": "Q-0-0",
+      "terms": [
+        {
+          "weight": 76,
+          "orbital": 1,
+          "spin": 0,
+          "pauli": "X",
+          "phase": 0
+        },
+        {
+          "weight": 76,
+          "orbital": 1,
+          "spin": 0,
+          "pauli": "Y",
+          "phase": 3
+        }
+      ]
+    },
+    {
+      "name": "Q-0-1",
+      "terms": [
+        {
+          "weight": 76,
+          "orbital": 1,
+          "spin": 1,
+          "pauli": "X",
+          "phase": 0
+        },
+        {
+          "weight": 76,
+          "orbital": 1,
+          "spin": 1,
+          "pauli": "Y",
+          "phase": 3
+        }
+      ]
+    },
+    {
+      "name": "D-1-0",
+      "terms": [
+        {
+          "weight": 99,
+          "orbital": 2,
+          "spin": 0,
+          "pauli": "X",
+          "phase": 0
+        },
+        {
+          "weight": 99,
+          "orbital": 2,
+          "spin": 0,
+          "pauli": "Y",
+          "phase": 1
+        }
+      ]
+    },
+    {
+      "name": "D-1-1",
+      "terms": [
+        {
+          "weight": 99,
+          "orbital": 2,
+          "spin": 1,
+          "pauli": "X",
+          "phase": 0
+        },
+        {
+          "weight": 99,
+          "orbital": 2,
+          "spin": 1,
+          "pauli": "Y",
+          "phase": 1
+        }
+      ]
+    }
+  ],
+  "energy_offset": -1.2,
+  "lambda_sqrt_squared": 2.49969482421875,
+  "precision": {
+    "max_vector_l2_error": 0.6324555320336759,
+    "coefficient_l1_rounding_error": 0.010982341168245813,
+    "hamiltonian_quantization_norm_bound": 4.361738102584641,
+    "bound_method": "sum_alpha (LCU_norm_ideal+LCU_norm_quantized)*generator_error; Majorana error <= vector L2, reflection error <= 4*vector L2; binary64 evaluation, not interval arithmetic",
+    "scope": "compact paper-layout alias target; deterministic rounding, not Appendix D stochastic tensors",
+    "alias_hamiltonian_norm_bound": 0.36317952473958337,
+    "alias_bound_method": "sum (old_LCU_norm+new_LCU_norm)*coefficient_L1_difference; binary64"
+  },
+  "source": {
+    "kind": "small physical Appendix B verification fixture",
+    "scope": "nonbinary outer range, binary inner range, both D1 and Q1"
+  },
+  "paper": {
+    "schema": "qpe.paper-target.v2",
+    "alias_bits": 1,
+    "rank": 1,
+    "bases": 1,
+    "copies": 1,
+    "outer": [
+      1,
+      2,
+      3
+    ],
+    "inner": [
+      [
+        3,
+        1
+      ]
+    ],
+    "uniform_bits": 3
+  }
+}

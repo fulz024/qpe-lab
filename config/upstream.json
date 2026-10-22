@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/andigu/uncompute.git",
+  "commit": "64b5a13aa249f1360846657392e6c66817b26d0f",
+  "license": "Apache-2.0",
+  "uv_version": "0.13.1",
+  "python_version": "3.12.15",
+  "uv_lock_sha256": "c198accefc32ce0739065168a9a8c7098f35487124c5ed47dc7dd82d14762874"
+}

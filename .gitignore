@@ -1,0 +1,38 @@
+.bootstrap/
+.tools/
+.venv*/
+__pycache__/
+*.pyc
+runs/
+results/
+audits/
+# Intermediate task profiles can be regenerated with prepare_walk_tasks.py.
+/benchmarks/dfthc/*/walk-alias/
+/benchmarks/dfthc/*/walk-paper/
+.cache/
+.ruff_cache/
+*.egg-info/
+
+# Local reports, presentation builds, manuscript work and scratch experiments.
+output/
+tmp/
+.codex-*/
+.chart-data-*/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.log
+*.ops
+sampling-private.json
+training-ledger.sqlite3*
+.DS_Store
+Thumbs.db
+
+# Credentials and machine-local configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key

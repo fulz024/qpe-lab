@@ -1,0 +1,192 @@
+{
+  "schema": "qpe.sos-model.v1",
+  "spatial_modes": 2,
+  "angle_bits": 5,
+  "coefficient_bits": 12,
+  "mode_order": "spin-blocked",
+  "orbital_angles": [
+    [
+      5
+    ],
+    [
+      29
+    ],
+    [
+      3
+    ],
+    [
+      11
+    ]
+  ],
+  "generators": [
+    {
+      "name": "SF-0-0",
+      "terms": [
+        {
+          "weight": 724,
+          "orbital": -1,
+          "spin": 0,
+          "pauli": "I",
+          "phase": 0
+        },
+        {
+          "weight": 1014,
+          "orbital": 0,
+          "spin": 0,
+          "pauli": "Z",
+          "phase": 2
+        },
+        {
+          "weight": 1014,
+          "orbital": 0,
+          "spin": 1,
+          "pauli": "Z",
+          "phase": 2
+        },
+        {
+          "weight": 434,
+          "orbital": 1,
+          "spin": 0,
+          "pauli": "Z",
+          "phase": 0
+        },
+        {
+          "weight": 434,
+          "orbital": 1,
+          "spin": 1,
+          "pauli": "Z",
+          "phase": 0
+        }
+      ]
+    },
+    {
+      "name": "SF-0-1",
+      "terms": [
+        {
+          "weight": 1159,
+          "orbital": -1,
+          "spin": 0,
+          "pauli": "I",
+          "phase": 2
+        },
+        {
+          "weight": 290,
+          "orbital": 0,
+          "spin": 0,
+          "pauli": "Z",
+          "phase": 0
+        },
+        {
+          "weight": 290,
+          "orbital": 0,
+          "spin": 1,
+          "pauli": "Z",
+          "phase": 0
+        },
+        {
+          "weight": 724,
+          "orbital": 1,
+          "spin": 0,
+          "pauli": "Z",
+          "phase": 2
+        },
+        {
+          "weight": 724,
+          "orbital": 1,
+          "spin": 1,
+          "pauli": "Z",
+          "phase": 2
+        }
+      ]
+    },
+    {
+      "name": "Q-0-0",
+      "terms": [
+        {
+          "weight": 1212,
+          "orbital": 2,
+          "spin": 0,
+          "pauli": "X",
+          "phase": 0
+        },
+        {
+          "weight": 1212,
+          "orbital": 2,
+          "spin": 0,
+          "pauli": "Y",
+          "phase": 3
+        }
+      ]
+    },
+    {
+      "name": "Q-0-1",
+      "terms": [
+        {
+          "weight": 1212,
+          "orbital": 2,
+          "spin": 1,
+          "pauli": "X",
+          "phase": 0
+        },
+        {
+          "weight": 1212,
+          "orbital": 2,
+          "spin": 1,
+          "pauli": "Y",
+          "phase": 3
+        }
+      ]
+    },
+    {
+      "name": "D-1-0",
+      "terms": [
+        {
+          "weight": 1586,
+          "orbital": 3,
+          "spin": 0,
+          "pauli": "X",
+          "phase": 0
+        },
+        {
+          "weight": 1586,
+          "orbital": 3,
+          "spin": 0,
+          "pauli": "Y",
+          "phase": 1
+        }
+      ]
+    },
+    {
+      "name": "D-1-1",
+      "terms": [
+        {
+          "weight": 1586,
+          "orbital": 3,
+          "spin": 1,
+          "pauli": "X",
+          "phase": 0
+        },
+        {
+          "weight": 1586,
+          "orbital": 3,
+          "spin": 1,
+          "pauli": "Y",
+          "phase": 1
+        }
+      ]
+    }
+  ],
+  "energy_offset": -1.2,
+  "lambda_sqrt_squared": 3.2863669991493225,
+  "precision": {
+    "max_vector_l2_error": 0.05444575917741422,
+    "coefficient_l1_rounding_error": 0.0014565459414067616,
+    "hamiltonian_quantization_norm_bound": 0.6490290545099597,
+    "bound_method": "sum_alpha (LCU_norm_ideal+LCU_norm_quantized)*generator_error; Majorana error <= vector L2, reflection error <= 4*vector L2; binary64 evaluation, not interval arithmetic",
+    "scope": "frozen quantized SOS target; no chemical-energy guarantee"
+  },
+  "source": {
+    "kind": "deterministic synthetic example",
+    "scope": "two spatial modes, both spins, SF plus creation/annihilation generators"
+  }
+}

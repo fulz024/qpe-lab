@@ -1,0 +1,9 @@
+{
+  "schema": "qpe.lookup.v1",
+  "name": "toy-givens-3m-b3",
+  "table": "angle-table.json",
+  "table_sha256": "5c66b5f8f2ef51d1cb2407c03e46c34ee031541c9d4972c355d287dc0ce519c4",
+  "address_bits": 2,
+  "word_bits": 6,
+  "max_qubits": 64
+}

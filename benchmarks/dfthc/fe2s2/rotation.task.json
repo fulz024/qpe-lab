@@ -1,0 +1,21 @@
+{
+  "schema": "qpe.rotation.v1",
+  "name": "fe2s2-dfthc-shared-vector-angles-b16-load-rotate-unload",
+  "table": "angle-table.json",
+  "table_sha256": "2b21b369789faae8442fc89a843eeac148794a3ce76bc6d0979a7122ed6e4ee6",
+  "address_bits": 8,
+  "word_bits": 304,
+  "max_qubits": 1024,
+  "mapping": "|a>|enable>|psi>|0> -> |a>|enable> U(table[a])**enable |psi>|0>",
+  "workspace": "starts and ends zero",
+  "phase": "fixed vacuum phase +1; no branch-wise phase alignment",
+  "delivery": "Python generator emitting QPECIR01 with OPSTRM01 lookup blocks and dyadic CGivens",
+  "angle_bits": 16,
+  "spatial_modes": 20,
+  "spin_copies": 2,
+  "controlled": true,
+  "consumer": "inverse-elimination-givens-v1",
+  "mode_order": "spin-blocked",
+  "angle_initial": "zero",
+  "cost_scope": "ideal rotation primitives; Clifford+T synthesis not included"
+}

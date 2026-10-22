@@ -1,0 +1,19 @@
+{
+  "schema": "qpe.walk.v1",
+  "name": "toy-dfthc-paper-strict",
+  "table": "sos-model.json",
+  "table_sha256": "d89427729fdb3143a84f56aa3dcaa165eca7c5073b4d29b76dfc3b80ac858c88",
+  "max_qubits": 1024,
+  "controlled": true,
+  "walk_convention": "Rin Udag Rout U; R=2P-I",
+  "input_projector": "x,b,spin_outer,spin_inner,sigma_outer,sigma_inner,uniform=0",
+  "output_projector": "b,spin_inner,sigma_inner,uniform_inner=0; retain outer; success_outer=1",
+  "gate_model": "ideal algebraic RY and dyadic Givens; explicit reversible controls",
+  "optimization": {
+    "cost_model": "clifford_t",
+    "walk_error_budget": 0.0001,
+    "objective": "t_count",
+    "synthesis_backend": "pygridsynth-2.0.0",
+    "ccx_decomposition": "7t-no-ancilla"
+  }
+}

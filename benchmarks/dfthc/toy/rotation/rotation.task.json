@@ -1,0 +1,20 @@
+{
+  "schema": "qpe.rotation.v1",
+  "name": "toy-givens-3m-b3-load-rotate-unload",
+  "table": "angle-table.json",
+  "table_sha256": "5c66b5f8f2ef51d1cb2407c03e46c34ee031541c9d4972c355d287dc0ce519c4",
+  "address_bits": 2,
+  "word_bits": 6,
+  "max_qubits": 64,
+  "angle_bits": 3,
+  "spatial_modes": 3,
+  "spin_copies": 1,
+  "controlled": true,
+  "consumer": "inverse-elimination-givens-v1",
+  "mode_order": "spin-blocked",
+  "angle_initial": "zero",
+  "mapping": "|a>|enable>|psi>|0> -> |a>|enable> U(table[a])**enable |psi>|0>",
+  "phase": "fixed vacuum phase +1; no branch-wise phase alignment",
+  "delivery": "Python generator emitting QPECIR01 with OPSTRM01 lookup blocks and dyadic CGivens",
+  "cost_scope": "ideal rotation primitives; Clifford+T synthesis not included"
+}

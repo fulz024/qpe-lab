@@ -1,0 +1,13 @@
+{
+  "schema": "qpe.angle-table.v1",
+  "words_hex": [
+    "0x11",
+    "0x2b",
+    "0x3e",
+    "0x0"
+  ],
+  "angle_bits": 3,
+  "angles_per_word": 2,
+  "valid_vectors": 3,
+  "packing": "little-endian angle words in descending elimination-pair order"
+}

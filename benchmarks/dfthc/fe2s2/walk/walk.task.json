@@ -1,0 +1,19 @@
+{
+  "schema": "qpe.walk.v1",
+  "name": "fe2s2-dfthc-controlled-sos-walk-b16-c24",
+  "table": "sos-model.json",
+  "table_sha256": "e0b088dd73daea62a139e9d34e2ae5d4e36443bc980653fac3c1729cd50d032f",
+  "max_qubits": 1024,
+  "controlled": true,
+  "walk_convention": "Rin Udag Rout U; R=2P-I",
+  "input_projector": "label=0,term=0",
+  "output_projector": "term=0; retain label",
+  "gate_model": "ideal algebraic RY and dyadic Givens; explicit reversible controls",
+  "optimization": {
+    "cost_model": "clifford_t",
+    "walk_error_budget": 0.0001,
+    "objective": "t_count",
+    "synthesis_backend": "pygridsynth-2.0.0",
+    "ccx_decomposition": "7t-no-ancilla"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source_url": "https://zenodo.org/records/17066718/files/spinfree.zip?download=1",
+  "source_member": "spinfree/best_solutions/Fe2S2-20o30e_14_15_5_ln10_ep1000_lrf10_tg977_te10_ndiff8_ln10_tg977_seed2000000.pickle",
+  "source_sha256": "781de90ecd9628b0aa5a09eb7935a312821c4d661b183d4fd61283a34ba0e0e4",
+  "system": "Fe2S2-20o30e",
+  "factors_sha256": "8e5ca0da924ddf2e439c075fa319c236a56a8162f81de24168bc79a6b066a3ce",
+  "angle_table_sha256": "2b21b369789faae8442fc89a843eeac148794a3ce76bc6d0979a7122ed6e4ee6",
+  "task_sha256": "338748a6a91e951986f0e054b661b7b994e53c4377c45cbe2d54cf7804a3741c",
+  "scope": "two-body shared-vector angle lookup; one-body/SOS/walk integration pending"
+}

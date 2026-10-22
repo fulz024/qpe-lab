@@ -1,0 +1,13 @@
+{
+  "schema": "qpe.lookup.v1",
+  "name": "fe2s2-dfthc-shared-vector-angles-b16",
+  "table": "angle-table.json",
+  "table_sha256": "2b21b369789faae8442fc89a843eeac148794a3ce76bc6d0979a7122ed6e4ee6",
+  "address_bits": 8,
+  "word_bits": 304,
+  "max_qubits": 1024,
+  "mapping": "|a>|z> -> |a>|z XOR table[a]>",
+  "workspace": "starts and ends zero",
+  "phase": "zero on every input and measurement branch",
+  "delivery": "Python generator emitting OPSTRM01 via UNCOMPUTE_OPS_PATH"
+}
